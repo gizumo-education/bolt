@@ -73,6 +73,7 @@ html, body {
   font-size: 30px;
   color: #c0c0c0;
   margin-top: 20px;
+  font-weight: 200;
 }
 
 /* イントロダクション */
@@ -104,7 +105,10 @@ html, body {
 
 .introduction__text--title {
   font-size: 24px;
-  margin-bottom: 35px;
+}
+
+.introduction__text--text {
+  margin-top: 35px;
 }
 
 /* 見出しの共通クラス */
@@ -133,10 +137,11 @@ html, body {
 .works__ul {
   font-size: 0px;
   margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .works__li {
-  display: inline-flex;
   margin:80px 0 0 100px;
 }
 
@@ -276,6 +281,11 @@ html, body {
     }
 
   /* works */
+
+.works__ul {
+  display: block;
+}
+
   .works__li {
     display: block;
     margin: 0px;

@@ -11,32 +11,24 @@
 ----------
 
 ## Bolt
-1. Bolt themのフォントが違う
 
-    #### 修正
+### Theme
+1. 「FREE BOOTSTRAP THEMES」は見本を見ると太字になっていないので、修正をお願いします！
 
-    1. h1タグにclass Ralewayを付与しました
-2. phone-imageの下の隙間
+#### 修正
+1. font-weightで修正しました
+​
+### WHAT WE CAN DO?
+1. 「WHAT WE CAN DO?」のmarginがbottomになっています。
+    marginはtopに統一したいので修正をお願いします！
 
-    #### 修正
+#### 修正
+1. introduction__text--titleのmarginを消して
+    introduction__text--textにmargin-top: 35px;を付与しました
+​
+### OUR LATEST WORK
+1. 画像を追加すると画像が真ん中の位置から追加されてしまいます。
+    画像が追加されてもcssを修正しなくて良いように左から画像が追加されるように修正お願いします！
 
-    1. phone-img imgにvertical-align: bottom;を付与しました
-
-3. SNSにトランディションを当てる
-
-    #### 修正
-
-    1. logo__bottomにtransition: .3 all;を付与しました。
-
-4. SNSエリアをul.liの形にする
-
-    #### 修正
-
-    1. SNSエリアの構造をul.liの形に変更しました
-
-5. skills ulにpaddingを当ててliのmarginをとる
-
-    #### 修正
-
-    1. skills__ulのmargin-topで余白をとりliのmarginを消しました
-    2. skills__li--textの上の余白をpaddingからmarginに変更しました。
+#### 修正
+1. works__ulにdisplay: flex;とflex-wrap: wrap;を付与しました
