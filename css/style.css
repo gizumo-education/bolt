@@ -8,6 +8,10 @@ html, body {
   max-width: 1100px;
 }
 
+.main {
+  padding-top: 70px;
+}
+
 /* ヘッダー */
 
 .header {
@@ -28,6 +32,7 @@ html, body {
 
 .bolt__icon {
   font-size: 30px;
+  color: #4e4e4e;
 }
 
 .bottom {
@@ -61,7 +66,7 @@ html, body {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
-  padding: 320px 0 250px;
+  padding: 250px 0 250px;
 }
 
 .bootstrap{
@@ -79,12 +84,16 @@ html, body {
 .inner__introduction {
   display: flex;
   justify-content: space-between;
+  padding-top: 50px;
 }
 
 .phone-img {
-  padding-top: 50px;
   text-align: center;
   width: 40%;
+}
+
+.phone-img img {
+  vertical-align: bottom;
 }
 
 .introduction__text {
@@ -95,7 +104,7 @@ html, body {
 
 .introduction__text--title {
   font-size: 24px;
-  padding: 50px 0 35px;
+  margin-bottom: 35px;
 }
 
 /* 見出しの共通クラス */
@@ -131,7 +140,6 @@ html, body {
   margin:80px 0 0 100px;
 }
 
-.works__li:nth-child(1),
 .works__li:nth-child(3n+1) {
   margin-left: 0;
 }
@@ -183,13 +191,14 @@ html, body {
 
 .skills__ul {
   font-size: 0px;
+  margin-top: 45px;
 }
 
 .skills__li {
   display: inline-block;
   font-size: 16px;
   color: #fff;
-  margin: 45px 0 0 180px;
+  margin-left: 180px;
 }
 
 .skills__li:first-child {
@@ -197,7 +206,7 @@ html, body {
 }
 
 .skills__li--text {
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 /* ロゴ */
@@ -205,6 +214,8 @@ html, body {
 .logo__inner {
   text-align: center;
   padding: 200px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .logo__bottom {
@@ -214,6 +225,7 @@ html, body {
   text-align: center;
   font-size: 50px;
   color: #74cfae;
+  transition: .3s all;
 }
 
 .logo__bottom:hover {
@@ -248,6 +260,7 @@ html, body {
   /* イントロダクション */
   .inner__introduction {
     display: block;
+    padding-bottom: 20px;
   }
 
   .phone-img {
@@ -259,12 +272,8 @@ html, body {
   }
 
   .introduction__text--title {
-    padding-top: 20px;
+    margin-top: 20px;
     }
-
-  .introduction__text--text {
-    padding-bottom: 25px;
-  }
 
   /* works */
   .works__li {
@@ -272,7 +281,7 @@ html, body {
     margin: 0px;
   }
 
-  .works__li:nth-child(4) {
+  .works__li:nth-child(3n+4) {
     margin-top: 80px;
   }
 
@@ -287,7 +296,7 @@ html, body {
 
   .works__footer--btn {
     display: inline-block;
-    margin: 40px auto 0;
+    margin: 40px 0 0;
   }
 
   /* SKILLS */
@@ -295,6 +304,10 @@ html, body {
     display: block;
     margin-top: 88px;
     margin-left: 0;
+  }
+
+  .skills__li:first-child {
+    margin-top: 30px;
   }
 }
 
@@ -311,8 +324,9 @@ html, body {
 
   .mobile__menu__btn-line {
     border: 1px solid #ddd;
-    width: 15px;
+    width: 20px;
     margin-top: 4px;
+    display: block;
   }
 
   .mobile__menu__btn-line:first-child {
@@ -335,6 +349,7 @@ html, body {
   /* logo */
   .logo__inner {
     padding: 50px 0;
+    display: block;
   }
 
   .logo__bottom {
