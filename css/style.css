@@ -153,6 +153,10 @@ html, body {
   margin-top: 0;
 }
 
+.works__link {
+  display: inline-block;
+}
+
 .works--image {
   opacity: 0.7;
   transition: 0.3s;
@@ -365,6 +369,5 @@ html, body {
   .logo__bottom {
     display: block;
     width: auto;
-    margin: 0 15px;
   }
 }
