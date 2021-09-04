@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+/*==========================
+common 
+===========================*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway";
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.is-lato {
+  font-family: "Lato";
+}
+
+.inner {
+  width: 1100px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.common-button {
+  background-color: #74cfae;
+  font-size: 12px;
+  padding: 14px 12px;
+  color: #fff;
+  font-weight: bold;
+  transition: color .3s ease 0s;
+}
+
+.common-button:hover {
+  color: #333;
+}
+
+/*==========================
+header
+===========================*/
+.header {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 36px;
+  color: #4e4e4e;
+}
+
+.header-contact {
+  margin-left: auto;
+}
+
+/*==========================
+main visual
+===========================*/
+.main-visual {
+  margin-top: 66px;
+}
+
+.main-visual__inner {
+  text-align: center;
+  padding: 250px 15px;
+}
+
+.main-visual__title {
+  font-size: 90px;
+  font-weight: 700;
+  color:  #74cfae;
+}
+
+.main-visual__lead {
+  font-size: 30px;
+  color: #c0c0c0;
+  margin-top: 20px;
+}
+
+/*==========================
+main about
+===========================*/
+.main-about {
+  background-color: #74cfae;
+}
+
+.main-about__inner {
+  display: flex;
+  flex-flow: row-reverse;
+  padding-top: 50px;
+}
+
+.main-about__content {
+  color: #fff;
+  text-align: center;
+  width: 65%;
+  max-width: 100%;
+  margin-left: auto;
+}
+
+.main-about__title {
+  font-size: 24px;
+}
+
+.main-about__text {
+  margin-top: 35px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.main-about__image {
+  width: 35%;
+}
+
+/*==========================
+main work
+===========================*/
+.main-work__inner {
+  padding: 60px 15px 70px;
+}
+
+.main-work__title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.main-work__content {
+  margin-top: 40px;
+}
+
+.main-work__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-work__item {
+  width: calc( 33.33333% - 100px * 2 / 3 );
+}
+
+.main-work__item:not(:nth-child(3n + 1)) {
+  margin-left: 100px;
+}
+
+.main-work__item:nth-child(n + 4) {
+  margin-top: 80px;
+}
+
+.main-work__link {
+  opacity: 0.7;
+  transition: opacity .3s ease 0s;
+}
+
+.main-work__link:hover {
+  opacity: 1;
+}
+
+.main-work__contact {
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-work__contact_text {
+  width: 46%;
+  text-align: center;
+  line-height: 28px;
+}
+
+.main-work__contact_mail {
+  margin-left: 90px;
+}
+
+/*==========================
+main skills
+===========================*/
+.main-skills {
+  background-color: #4e4e4e;
+}
+
+.main-skills__inner {
+  padding: 70px 15px 100px;
+}
+
+.main-skills__title {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+.main-skills__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.main-skills__item {
+  width: calc( 25% - 180px * 3 / 4 );
+}
+
+.main-skills__item:not(:first-child) {
+  margin-left: 180px;
+}
+
+.main-skills__name {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*==========================
+main sns
+===========================*/
+.main-sns__inner {
+  padding: 200px 15px;
+}
+
+.main-sns__content {
+  width: 740px;
+  margin: 0 auto;
+}
+
+.main-sns__items {
+  display: flex;
+}
+
+.main-sns__item {
+  text-align: center;
+}
+
+.main-sns__link {
+  display: inline-block;
+  width: 185px;
+  padding: 30px 0;
+  font-size: 50px;
+  color: #74cfae;
+  transition: all .3s ease 0s;
+}
+
+.main-sns__link:hover {
+  background-color: #fff;
+}
+
+/*==========================
+footer
+===========================*/
+.footer {
+  background-color: #74cfae;
+}
+
+.footer-inner {
+  padding: 20px 15px 25px;
+}
+
+.footer-copyright {
+  color: #fff;
+  text-align: right;
+}
