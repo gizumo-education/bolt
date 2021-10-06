@@ -3,13 +3,6 @@
 /*==========================
 common 
 ===========================*/
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Raleway";
   background-color: #f2f2f2;
@@ -19,6 +12,7 @@ body {
 img {
   vertical-align: bottom;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -79,8 +73,8 @@ header
 /*==========================
 main visual
 ===========================*/
-.main-visual {
-  margin-top: 66px;
+.main {
+  margin-top: 70px;
 }
 
 .main-visual__inner {
@@ -180,18 +174,22 @@ main work
 .main-work__contact {
   margin-top: 90px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .main-work__contact_text {
-  width: 46%;
+  width: 45%;
   text-align: center;
   line-height: 28px;
 }
 
 .main-work__contact_mail {
   margin-left: 90px;
+}
+
+.common-button.mail-button {
+  padding: 14px 20px;
 }
 
 /*==========================
@@ -295,7 +293,7 @@ Tab Responsive
 
   /* about */
   .main-about__inner {
-    flex-flow: column-reverse;
+    flex-direction: column-reverse;
     justify-content: center;
     padding-bottom: 25px;
   }
@@ -334,8 +332,7 @@ Tab Responsive
 
   .main-work__contact {
     margin-top: 80px;
-    flex-flow: column;
-
+    flex-direction: column;
   }
 
   .main-work__contact_text {
@@ -345,11 +342,13 @@ Tab Responsive
   .main-work__contact_mail {
     margin-left: 0;
     margin-top: 40px;
+    width: 100%;
+    text-align: center;
   }
 
   /* skills */
   .main-skills__items {
-    display: block;
+    flex-direction: column;
   }
 
   .main-skills__item {
@@ -414,7 +413,7 @@ SP Responsive
   }
 
   .main-sns__items {
-    display: block;
+    flex-direction: column;
   }
 
   .main-sns__link {
