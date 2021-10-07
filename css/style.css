@@ -4,7 +4,7 @@
 common 
 ===========================*/
 body {
-  font-family: "Raleway";
+  font-family: 'Lato', sans-serif;
   background-color: #f2f2f2;
   color: #333;
 }
@@ -20,8 +20,8 @@ a {
   color: #333;
 }
 
-.is-lato {
-  font-family: "Lato";
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
 }
 
 .inner {
@@ -103,30 +103,31 @@ main about
 
 .main-about__inner {
   display: flex;
-  flex-flow: row-reverse;
   padding-top: 50px;
 }
 
 .main-about__content {
   color: #fff;
   text-align: center;
-  width: 65%;
+  width: 660px;
   max-width: 100%;
   margin-left: auto;
 }
 
 .main-about__title {
   font-size: 24px;
+  margin-top: 30px;
 }
 
 .main-about__text {
   margin-top: 35px;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 25px;
 }
 
 .main-about__image {
-  width: 35%;
+  width: 208px;
+  margin-left: 90px;
 }
 
 /*==========================
@@ -174,14 +175,15 @@ main work
 .main-work__contact {
   margin-top: 90px;
   display: flex;
-  align-items: flex-start;
   justify-content: center;
 }
 
 .main-work__contact_text {
-  width: 45%;
+  width: 572px;
+  max-width: 100%;
   text-align: center;
-  line-height: 28px;
+  line-height: 25px;
+  font-size: 20px;
 }
 
 .main-work__contact_mail {
@@ -293,9 +295,13 @@ Tab Responsive
 
   /* about */
   .main-about__inner {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     padding-bottom: 25px;
+  }
+
+  .main-about__title {
+    margin-top: 0;
   }
 
   .main-about__content {
@@ -306,6 +312,7 @@ Tab Responsive
   .main-about__image {
     width: 100%;
     text-align: center;
+    margin-left: 0;
   }
 
   /* work */
