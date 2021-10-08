@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /*==========================
-common 
+common
 ===========================*/
 body {
   font-family: 'Lato', sans-serif;
@@ -11,13 +11,10 @@ body {
 
 img {
   vertical-align: bottom;
-  max-width: 100%;
-  height: auto;
 }
 
 a {
   text-decoration: none;
-  color: #333;
 }
 
 .font-raleway {
@@ -26,7 +23,6 @@ a {
 
 .inner {
   width: 1100px;
-  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -74,7 +70,7 @@ header
 main visual
 ===========================*/
 .main {
-  margin-top: 70px;
+  padding-top: 70px;
 }
 
 .main-visual__inner {
@@ -110,7 +106,6 @@ main about
   color: #fff;
   text-align: center;
   width: 660px;
-  max-width: 100%;
   margin-left: auto;
 }
 
@@ -142,33 +137,26 @@ main work
   text-align: center;
 }
 
-.main-work__content {
-  margin-top: 40px;
-}
-
 .main-work__items {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
-.main-work__item {
-  width: calc(33.33333% - 100px * 2 / 3);
-}
-
-.main-work__item:not(:nth-child(3n + 1)) {
+.main-work__items > li:not(:nth-child(3n + 1)) {
   margin-left: 100px;
 }
 
-.main-work__item:nth-child(n + 4) {
+.main-work__items > li:nth-child(n + 4) {
   margin-top: 80px;
 }
 
-.main-work__link {
+.main-work__items > li > a {
   opacity: 0.7;
   transition: opacity .3s ease 0s;
 }
 
-.main-work__link:hover {
+.main-work__items > li > a:hover {
   opacity: 1;
 }
 
@@ -180,7 +168,6 @@ main work
 
 .main-work__contact_text {
   width: 572px;
-  max-width: 100%;
   text-align: center;
   line-height: 25px;
   font-size: 20px;
@@ -215,19 +202,15 @@ main skills
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   margin-top: 60px;
 }
 
-.main-skills__item {
-  width: calc(25% - 180px * 3 / 4);
+.main-skills__items > li {
   text-align: center;
 }
 
-.main-skills__item:not(:first-child) {
-  margin-left: 180px;
-}
-
-.main-skills__name {
+.main-skills__items > li > figure > figcaption {
   font-size: 16px;
   color: #fff;
   margin-top: 20px;
@@ -240,21 +223,18 @@ main sns
   padding: 200px 0;
 }
 
-.main-sns__content {
+.main-sns__items {
+  display: flex;
   width: 740px;
   max-width: 100%;
   margin: 0 auto;
 }
 
-.main-sns__items {
-  display: flex;
-}
-
-.main-sns__item {
+.main-sns__items > li {
   text-align: center;
 }
 
-.main-sns__link {
+.main-sns__items > li > a {
   display: inline-block;
   width: 185px;
   padding: 30px 0;
@@ -263,7 +243,7 @@ main sns
   transition: all .3s ease 0s;
 }
 
-.main-sns__link:hover {
+.main-sns__items > li > a:hover {
   background-color: #fff;
 }
 
@@ -317,23 +297,22 @@ Tab Responsive
 
   /* work */
   .main-work__items {
-    display: block;
+    flex-direction: column;
   }
 
-  .main-work__item {
-    width: 100%;
+  .main-work__items > li {
     text-align: center;
   }
 
-  .main-work__item:not(:nth-child(3n + 1)) {
+  .main-work__items > li:not(:nth-child(3n + 1)) {
     margin-left: 0;
   }
 
-  .main-work__item:nth-child(n + 4) {
+  .main-work__items > li:nth-child(n + 4) {
     margin-top: 0;
   }
 
-  .main-work__item:nth-child(4) {
+  .main-work__items > li:nth-child(4) {
     margin-top: 80px;
   }
 
@@ -358,11 +337,7 @@ Tab Responsive
     flex-direction: column;
   }
 
-  .main-skills__item {
-    width: 100%;
-  }
-
-  .main-skills__item:not(:first-child) {
+  .main-skills__items > li:not(:first-child) {
     margin-left: 0;
     margin-top: 88px;
   }
@@ -423,7 +398,7 @@ SP Responsive
     flex-direction: column;
   }
 
-  .main-sns__link {
+  .main-sns__items > li > a {
     width: 100%;
   }
 }
