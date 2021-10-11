@@ -274,8 +274,7 @@ Tab Responsive
 
   /* about */
   .main-about__inner {
-    flex-direction: column;
-    justify-content: center;
+    display: block;
     padding-bottom: 25px;
   }
 
@@ -296,7 +295,7 @@ Tab Responsive
 
   /* work */
   .main-work__items {
-    flex-direction: column;
+    display: block;
   }
 
   .main-work__items > li {
@@ -321,7 +320,7 @@ Tab Responsive
 
   .main-work__contact {
     margin-top: 80px;
-    flex-direction: column;
+    display: block;
   }
 
   .main-work__contact_text {
@@ -337,7 +336,7 @@ Tab Responsive
 
   /* skills */
   .main-skills__items {
-    flex-direction: column;
+    display: block;
   }
 
   .main-skills__items > li:not(:first-child) {
@@ -399,7 +398,7 @@ SP Responsive
   }
 
   .main-sns__items {
-    flex-direction: column;
+    display: block;
   }
 
   .main-sns__items > li > a {
