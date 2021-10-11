@@ -15,6 +15,7 @@ img {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 .font-raleway {
@@ -27,7 +28,6 @@ a {
 }
 
 .common-button {
-  display: inline-block;
   background-color: #74cfae;
   font-size: 12px;
   padding: 14px 12px;
@@ -235,7 +235,6 @@ main sns
 }
 
 .main-sns__items > li > a {
-  display: inline-block;
   width: 185px;
   padding: 30px 0;
   font-size: 50px;
@@ -312,8 +311,12 @@ Tab Responsive
     margin-top: 0;
   }
 
-  .main-work__items > li:nth-child(4) {
+  .main-work__items > li:nth-child(3n + 1) {
     margin-top: 80px;
+  }
+
+  .main-work__items > li:first-child {
+    margin-top: 0;
   }
 
   .main-work__contact {
@@ -365,6 +368,7 @@ SP Responsive
   }
 
   .header-hamburger__line {
+    display: block;
     width: 25px;
     height: 3px;
     border-radius: 4px;
